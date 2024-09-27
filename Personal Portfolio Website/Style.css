@@ -1,0 +1,361 @@
+/* DEVELOPER: Jerry Arguello, IS117-004, Spring 2024*/
+.navbar {
+    background-color: #3BAA75;
+  }
+  
+  .navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .main-content {
+    margin-top: 60px; /* Adjust this value navbar's height */
+  }
+  
+  /* Navbar Logo Start */
+  .navbar-brand img {
+    width: 80px;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .navbar-brand img {
+      width: 100px;
+    }
+  
+    .navbar-brand {
+      margin-right: 0;
+      padding: 0 2em;
+    }
+  }
+  
+  /* Navbar Logo End */
+  .navbar-nav {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5em;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .navbar-nav {
+      align-items: center;
+      padding-left: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.25em;
+    padding: .5em 2.5em;
+    color: white;
+    position: relative;
+    transition: .2s;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: black;
+  }
+  
+  /* Dropdown items start */
+  ul.dropdown-menu {
+    background-color: #3BAA75;
+    border: none;
+  }
+  
+  a.dropdown-item {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 1em 0;
+    color: white;
+  }
+  
+  .dropdown-item:hover {
+    background-color: white;
+  }
+  
+  /* Dropdown items end */
+  
+  /* Organize sections of website */
+  section {
+    min-height: 100vh;
+    background: #1F1C1C;
+  }
+  
+  section:nth-child(odd) {
+    background: #353232;
+  }
+  
+  main,
+  footer {
+    color: white;
+  }
+
+  h1 {
+    text-align: center; /* Center the text */
+    text-decoration: underline red; /* Underline the text */
+    padding-top: 1em;
+  }
+  
+  /* Organize sections of website end */
+  
+  /* Home page */
+  #home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+  }
+  
+  .home-content {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  #home img {
+    max-width: 30%;
+    margin-right: 5%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    border: 4px solid #A12A2A;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) { /* Adjust the max-width as per your design */
+    #home img {
+      display: none; /* Hide the image on smaller screens */
+    }
+    
+    .button-box {
+      flex-direction: column; /* Change button orientation to column on smaller screens */
+    }
+    
+    .button-box a {
+      margin-right: 0; /* Remove right margin for buttons */
+      margin-bottom: 10px; /* Add space between buttons */
+    }
+  }
+  
+  .home-content h2,
+  .home-content h4 {
+    font-size: 30px;
+  }
+  
+  .home-content h5 {
+    font-size: 20px;
+    margin: 20px 0 40px;
+  }
+  
+  .home-content .button-box {
+    width: 100%;
+    max-width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #3BAA75, #2A5D3F);
+    border: 2px solid none;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  
+  
+/*Projects portion of the website*/
+
+/*Project page*/
+#projects {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.project-category {
+  width: 325px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  align-items: center; /* Add this line */
+}
+
+.project-category img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+  flex: 1; /* Add this line */
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  justify-content: space-between; /* Add this line */
+}
+
+.card-content h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: black;
+  font-size: 14px;
+  line-height: 1.3;
+  overflow: hidden; /* Add this line */
+  text-overflow: ellipsis; /* Add this line */
+}
+
+.card-content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3BAA75;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+/*Project page*/
+
+/*Contact page*/
+form{
+  text-align:center;
+  justify-content: center;
+}
+
+.container{
+  padding: 1.5%;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  background: transparent;
+  font-size: 12px;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3BAA75;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+/*Contact page*/
+ 
+/*About Me page*/
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row; /* Change to column layout */
+  align-items: center; /* Center horizontally */
+  max-width: 800px; /* Set a maximum width to prevent them from exceeding the container */
+}
+
+.about-box1,
+.about-box2 {
+  margin-top: 20px; /* Reduce margin top for spacing */
+  padding: 20px; /* Increase padding for space inside the box */
+  width: 100%; /* Adjust width to 100% */
+}
+
+.about-text {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  max-width: 100%; /* Make text responsive */
+}
+
+.about-box1 h3, .about-box2 h3 {
+  text-decoration: underline red; /* Underline the text */
+  padding-top: 1em;
+}
+
+
+/*Experience page*/
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center the text */
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; /* Add space between the boxes */
+  width: 80%; /* Adjust width as needed */
+  max-width: 800px; /* Limit the maximum width */
+}
+
+.experience-box1,
+.experience-box2 {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 45%; /* Adjust width to fit within the container */
+  margin: 20px 0; /* Change margin for smaller screens */
+}
+
+.listed.skills {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency as needed */
+  padding: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .experience-content {
+    flex-direction: column; /* Change to column layout for smaller screens */
+    align-items: center; /* Center items vertically */
+  }
+
+  .experience-box1,
+  .experience-box2 {
+    width: 80%; /* Adjust width to fit within the container */
+    margin: 20px 0; /* Change margin for smaller screens */
+  }
+}
+
+/*Experience page*/
